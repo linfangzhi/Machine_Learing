@@ -35,7 +35,7 @@ def classify0(inX, dataSet, labels, k):
 	#numpy函数shape[0]返回dataSet的行数
 	dataSetSize = dataSet.shape[0]
 	#在列向量方向上重复inX共1次(横向)，行向量方向上重复inX共dataSetSize次(纵向)
-	diffMat = np.tile(inX, (dataSetSize, 1)) - dataSet
+	diffMat = np.    (inX, (dataSetSize, 1)) - dataSet
 	#二维特征相减后平方
 	sqDiffMat = diffMat**2
 	#sum()所有元素相加，sum(0)列相加，sum(1)行相加
